@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}"></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Thank You section -->
+    <article id="thankyou">
+        <h2 class="major">Thank You</h2>
+        <p>Thank you, {{ data.name }}, for your message! I will get in touch with you shortly!</p>
+                <ul class="icons">
+            <li><a href="https://www.facebook.com/ralitsa.ilieva.92" target="_blank" class="icon brands fa-facebook-f" title="Find me on Facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/ralitsa.ilieva.92/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR04qu7MLIJUcnIpxO14Gh3UubT6KWq9w6BSkOduAyWLpS1GIgz00xIdKLM" target="_blank" class="icon brands fa-instagram" title="Find me on Instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://github.com/RalIlieva" target="_blank" class="icon brands fa-github" title="Find me on GitHub"><span class="label">GitHub</span></a></li>
+        </ul>
+    </article>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="copyright">&copy;Ralitsa Ilieva {{ data.date }}</p>
+    </footer>
+
+    <!-- Your scripts go here if needed -->
+    <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+</html>
